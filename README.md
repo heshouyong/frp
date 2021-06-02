@@ -24,7 +24,7 @@ frp also has a P2P connect mode.
     * [Forward DNS query request](#forward-dns-query-request)
     * [Forward Unix domain socket](#forward-unix-domain-socket)
     * [Expose a simple HTTP file server](#expose-a-simple-http-file-server)
-    * [Enable HTTPS for local HTTP service](#enable-https-for-local-http-service)
+    * [Enable HTTPS for local HTTP(s) service](#enable-https-for-local-https-service)
     * [Expose your service privately](#expose-your-service-privately)
     * [P2P Mode](#p2p-mode)
 * [Features](#features)
@@ -421,12 +421,12 @@ Configure a port for dashboard to enable this feature:
 ```ini
 [common]
 dashboard_port = 7500
-# dashboard's username and password are both optional，if not set, default is admin.
+# dashboard's username and password are both optional
 dashboard_user = admin
 dashboard_pwd = admin
 ```
 
-Then visit `http://[server_addr]:7500` to see the dashboard, with username and password both being `admin` by default.
+Then visit `http://[server_addr]:7500` to see the dashboard, with username and password both being `admin`.
 
 ![dashboard](/doc/pic/dashboard.png)
 
@@ -444,7 +444,7 @@ admin_user = admin
 admin_pwd = admin
 ```
 
-Then visit `http://127.0.0.1:7400` to see admin UI, with username and password both being `admin` by default.
+Then visit `http://127.0.0.1:7400` to see admin UI, with username and password both being `admin`.
 
 ### Monitor
 
